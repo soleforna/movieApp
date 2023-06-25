@@ -1,0 +1,142 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@600&family=Montserrat&family=Playfair+Display:wght@900&display=swap");
+
+/* styles reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+     height: 100vh;
+}
+.body{
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: #757575;
+  display: flex;
+  flex-direction: column;
+  
+}
+/* -----------------------header-------------------------- */
+.headerContainer,
+.footerContainer {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headerContainer {
+  height: 10vh;
+  position: fixed;
+  top: 0;
+}
+
+.headerContainer-title {
+  font-family: "Geologica", sans-serif;
+  padding-left: 15px;
+}
+
+/* ----------------------main--------------------------- */
+
+.mainContainer {
+  background-color: #bdbdbd;
+  
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10vh;
+  flex: 1;
+
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.mainContainer-form {
+  padding: 2.5vh 0 2.5vh 2.5vh;
+}
+
+.mainContainer input, 
+.mainContainer select {
+  border: none;
+  outline: none;
+ 
+  width: 80%;
+  margin-left: 15px;
+}
+
+.requerido {
+  color: red;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 40%;
+  margin: 0 auto;
+
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  text-align: center;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  display: inline-block;
+  color: gray;
+  cursor: pointer;
+}
+
+.rating label:before {
+  content: "\2605";
+  font-size: 3.5vmax;
+  padding: 0 0.2rem;
+}
+
+.stars {
+  font-size: 2.5vmax;
+  padding-right: 3px;
+ 
+  
+}
+
+.rating input:checked ~ label,
+.filled-stars {
+  color: gold;
+  text-align: center;
+  
+
+}
+
+.mainContainer-form-btn {
+  margin-top: 2.5vh;
+}
+
+#dataTable td {
+  vertical-align: middle; /* Alineación vertical centrada */
+}
+
+#dataTable th {
+  text-align: center; /* Alineación horizontal centrada */
+}
+/* ......................... */
+
+
+.empty-stars {
+  color:grey;
+  
+}
+/* --------------------footer----------------------------- */
+
+.footerContainer {
+  height: 5vh;
+  width: 100%;
+
+}
