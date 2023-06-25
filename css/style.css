@@ -45,7 +45,7 @@ html{
 .mainContainer {
   background-color: #bdbdbd;
   
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 10vh;
   flex: 1;
@@ -53,6 +53,12 @@ html{
   font-family: "Montserrat", sans-serif;
   color: black;
 }
+
+@media (min-width: 576px) { 
+  .mainContainer{
+    width: 80%;
+  }
+ }
 
 .mainContainer-form {
   padding: 2.5vh 0 2.5vh 2.5vh;
