@@ -37,7 +37,7 @@ html{
 
 .headerContainer-title {
   font-family: "Geologica", sans-serif;
-  font-size: 2vmax;
+  font-size:3vmax;
   padding-left: 15px;
 }
 .headerContainer-logo {
@@ -73,7 +73,7 @@ html{
   }
 
   .headerContainer-title{
-    font-size: 1.5vmax;
+    font-size: 2vmax;
   }
  }
 
