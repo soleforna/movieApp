@@ -23,7 +23,8 @@ document.getElementById("mainForm").addEventListener("submit", function (e) {
   if (selectedOption) {
     rate = selectedOption.value;
   } else {
-    console.log("Falta ingresar la calificación");
+    console.log("Falta valoración");
+    return;
   }
 
   //Obtengo nro de película ingresada en la tabla
@@ -35,7 +36,6 @@ document.getElementById("mainForm").addEventListener("submit", function (e) {
     rowNumber = "1";
   } else {
     rowNumber = parseInt(nro) + 1;
-    console.log(rowNumber);
   }
 
   // Crear un objeto de tipo movie y le pasamos como parámetros:
@@ -50,7 +50,6 @@ document.getElementById("mainForm").addEventListener("submit", function (e) {
 
 function addMovieToTable(movie) {
   const tableBody = document.querySelector("#dataTable tbody");
-  console.log(movie);
 
   // Crear una nueva fila en la tabla
   const newRow = document.createElement("tr");
@@ -60,14 +59,11 @@ function addMovieToTable(movie) {
     const cell = document.createElement("td");
 
     if (key === "rate") {
-      
       const rate = movie[key];
-    /*   const stars = getStarsRepresentation(rate); */
 
       // Crear un elemento span para cada estrella
       const starContainer = document.createElement("span");
       starContainer.classList.add("stars");
-     /*  cell.innerHTML = stars; */
 
       cell.classList.add("filled-stars");
 

@@ -35,7 +35,7 @@
       <h1 class="headerContainer-title">Movie App</h1>
     </header>
     <main class="mainContainer">
-      <form action="submit" id= "mainForm" class="mainContainer-form">
+      <form action="submit" id="mainForm" class="mainContainer-form">
         <!-- Movie Input -->
         <div class="mb-3">
           <label for="movieInput" class="form-label fs-5 fw-medium"
@@ -52,8 +52,16 @@
         <!-- Gender Input -->
         <div class="mb-3">
           <label for="genderInput" class="form-label fs-5 fw-medium"
-            >Género <span class="requerido">*</span></label>
-          <select class="form-select" aria-label="Default select example" id="genderInput" placeholder="Género" required title="Este campo es requerido">
+            >Género <span class="requerido">*</span></label
+          >
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="genderInput"
+            placeholder="Género"
+            required
+            title="Este campo es requerido"
+          >
             <option value="" disabled selected hidden>Género</option>
             <option value="1">Comedia</option>
             <option value="2">Acción</option>
@@ -61,13 +69,13 @@
             <option value="4">Ciencia Ficción</option>
             <option value="5">Drama</option>
           </select>
-         
+
           <!-- Rate Input -->
         </div>
 
         <div class="mb-3">
           <p class="fs-5 fw-medium">
-            Valoración <span class="requerido">*</span>
+            Valoración <span class="requerido" id="rate">*</span>
           </p>
           <div class="rating">
             <input type="radio" id="star5" name="rating" value="5" />
@@ -105,10 +113,7 @@
               <th scope="col">Valoración</th>
             </tr>
           </thead>
-          <tbody>
-            
-            
-          </tbody>
+          <tbody></tbody>
         </table>
       </div>
     </main>

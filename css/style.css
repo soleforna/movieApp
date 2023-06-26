@@ -8,17 +8,16 @@
   box-sizing: border-box;
 }
 
-html{
-     height: 100vh;
+html {
+  height: 100vh;
 }
-.body{
+.body {
   width: 100%;
   min-height: 100vh;
 
   background-color: #757575;
   display: flex;
   flex-direction: column;
-  
 }
 /* -----------------------header-------------------------- */
 .headerContainer,
@@ -37,12 +36,12 @@ html{
 
 .headerContainer-title {
   font-family: "Geologica", sans-serif;
-  font-size:3vmax;
+  font-size: 3vmax;
   padding-left: 15px;
 }
 .headerContainer-logo {
-  width:10%; 
-  height: 100%; 
+  width: 10%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,48 +51,48 @@ html{
   max-width: 100%;
   max-height: 100%;
   width: auto;
-  height: auto;}
+  height: auto;
+}
 /* ----------------------main--------------------------- */
 
 .mainContainer {
   background-color: #bdbdbd;
-  
+
   width: 100%;
   margin: 0 auto;
-  padding-top: 10vh; 
+  padding-top: 10vh;
   flex: 1;
 
   font-family: "Montserrat", sans-serif;
   color: black;
 }
 
-@media (min-width: 576px) { 
-  .mainContainer{
+@media (min-width: 576px) {
+  .mainContainer {
     width: 80%;
   }
 
-  .headerContainer-title{
+  .headerContainer-title {
     font-size: 2vmax;
   }
- }
-
-
+}
 
 .mainContainer-form {
   padding: 2.5vh 0 2.5vh 2.5vh;
 }
 
-.mainContainer input, 
+.mainContainer input,
 .mainContainer select {
   border: none;
   outline: none;
- 
+
   width: 80%;
   margin-left: 15px;
 }
 
 .requerido {
   color: red;
+  font-size: small;
 }
 
 .rating {
@@ -128,16 +127,12 @@ html{
 .stars {
   font-size: 2.5vmax;
   padding-right: 3px;
- 
-  
 }
 
 .rating input:checked ~ label,
 .filled-stars {
   color: gold;
   text-align: center;
-  
-
 }
 
 .mainContainer-form-btn {
@@ -153,15 +148,12 @@ html{
 }
 /* ......................... */
 
-
 .empty-stars {
-  color:grey;
-  
+  color: grey;
 }
 /* --------------------footer----------------------------- */
 
 .footerContainer {
   height: 5vh;
   width: 100%;
-
 }
